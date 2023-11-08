@@ -26,32 +26,46 @@
                     </button>
 
                     <nav id="nav-menu"
-                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-500">
                         <ul class="block lg:flex font-bold">
                             <li class="group">
                                 <a href="#home"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Beranda</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Beranda</a>
                             </li>
                             <li class="group">
                                 <a href="#about"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">About
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">About
                                     us</a>
                             </li>
                             <li class="group">
                                 <a href="#portfolio"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Portofolio</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Portofolio</a>
                             </li>
                             <li class="group">
                                 <a href="#clients"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Clients</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Clients</a>
                             </li>
                             <li class="group">
                                 <a href="#blog"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Blog</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Blog</a>
                             </li>
                             <li class="group">
                                 <a href="#contact"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact</a>
+                            </li>
+
+                            <li class="flex items-center pl-8 mt-3">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-600 font-bold">light</span>
+                                    <input type="checkbox" name="" class="hidden" id="dark-toggle">
+                                    <label for="dark-toggle">
+                                        <div
+                                            class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1 transition duration-300 ease ease-in-out">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-600 font-bold">dark</span>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -61,20 +75,21 @@
     </header>
     <!-- Header end -->
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class="text-base font-semibold text-primary md:text-xl">
                         Hallo Semua 😎, saya
-                        <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Azis Muhammad</span>
+                        <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">Azis
+                            Muhammad</span>
                     </h1>
                     <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
-                        Pelajar <span class="text-dark">Siswa baik</span>
+                        Pelajar <span class="text-dark dark:text-white">Siswa baik</span>
                     </h2>
                     <p class="font-medium text-secondary mb-10">
                         Tetaplah bernapas karena hidup itu
-                        <span class="text-dark">pilihan</span>
+                        <span class="text-dark dark:text-white">pilihan</span>
                     </p>
 
                     <a href="#"
@@ -84,8 +99,8 @@
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-9 lg:right-0">
                         <img src="dist/img/spider-man-miles-morales-in-the-hood-sticker.png"
-                            class="max-w-[425px] mx-auto" alt="" />
-                        <span class="absolute -bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                            class="max-w-[425px] mx-auto relative z-10" alt="" />
+                        <span class="absolute -bottom-20  left-1/2 -translate-x-1/2 md:scale-125">
                             <svg width="375px" height="375px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#800000"
                                     d="M37.3,-55.2C51.7,-48.8,69,-44.1,79.5,-32.9C90.1,-21.6,93.8,-3.8,87.3,9.6C80.9,23.1,64.2,32.2,51.7,42.6C39.2,53.1,30.9,65,19.8,68.9C8.8,72.7,-5.1,68.5,-18,63.6C-30.8,58.7,-42.8,53.1,-53.8,44.4C-64.7,35.7,-74.7,23.9,-75.3,11.6C-75.9,-0.8,-67.1,-13.7,-60.7,-27.7C-54.3,-41.8,-50.3,-56.9,-40.6,-65.5C-30.9,-74,-15.4,-75.9,-2,-72.8C11.5,-69.7,22.9,-61.6,37.3,-55.2Z"
